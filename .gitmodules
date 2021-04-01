@@ -1,3 +1,6 @@
 [submodule "src/dep/genpatched-linux"]
 	path = src/dep/genpatched-linux
 	url = https://github.com/NobodyXu/genpatched-linux
+[submodule "src/dep/busybox"]
+	path = src/dep/busybox
+	url = https://git.busybox.net/busybox/
