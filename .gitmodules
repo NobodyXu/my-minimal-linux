@@ -7,3 +7,6 @@
 [submodule "src/dep/musl"]
 	path = src/dep/musl
 	url = git://git.musl-libc.org/musl
+[submodule "src/dep/linux-pam"]
+	path = src/dep/linux-pam
+	url = https://github.com/linux-pam/linux-pam.git
