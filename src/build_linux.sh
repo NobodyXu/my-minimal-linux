@@ -10,10 +10,10 @@ config=$(realpath $1)
 cd $(dirname $0)
 
 mkdir -p boot
-mkdir -p kernel-headers
+mkdir -p build_dir/usr/include/
 
 export INSTALL_PATH=$(realpath boot)
-export INSTALL_HDR_PATH=$(realpath kernel-headers)
+BUILD=$(realpath build_dir)
 
 cd dep/genpatched-linux/linux/
 
@@ -24,4 +24,4 @@ make -j $(nproc)
 make install
 make headers_install
 
-exec rsync --info=progress2,stats,symsafe -aHAX --delete usr/include/ $INSTALL_HDR_PATH
+exec rsync --info=progress2,stats,symsafe -aHAX --delete usr/include/ ${BUILD}/usr/include

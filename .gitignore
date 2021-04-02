@@ -55,5 +55,5 @@ dkms.conf
 boot
 # This is where the userspace softwares will be installed to
 rootfs
-# This is where kernel-headers will be installed
-kernel-headers
+# This is where kernel-headers, libmusl.a will be installed to
+build_dir
