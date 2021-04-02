@@ -35,4 +35,8 @@ ln -sf /usr/bin/nm musl-nm
 ln -sf /usr/bin/strip musl-strip
 ln -sf /usr/bin/objcopy musl-objcopy
 ln -sf /usr/bin/objdump musl-objdump
-ln -sf /usr/bin/pkg-config musl-pkg-config
+
+cp -f ../../../musl-pkg-config .
+
+cd ../
+mkdir -p lib/pkgconfig/ share/pkgconfig/

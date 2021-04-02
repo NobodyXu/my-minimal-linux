@@ -1,0 +1,9 @@
+#!/bin/sh
+
+bin=$(dirname $0)
+SYSROOT=$(realpath ${bin}/../)
+
+export PKG_CONFIG_SYSROOT_DIR="$SYSROOT"
+export PKG_CONFIG_LIBDIR="${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgconfig"
+
+exec pkg-config  $@
