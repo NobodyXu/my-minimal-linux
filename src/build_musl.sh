@@ -25,7 +25,7 @@ make install
 cd ${BUILD}/bin/
 
 sed 's/-print-prog-name=ld/-print-prog-name=ld.lld/' ld.musl-clang >ld.musl-clang-lld
-sed 's/-lc/-l:libc.a/' ld.musl-clang-lld >ld.musl-clang-lld-static
+sed -e 's/-lc/-l:libc.a/' -e 's/-dynamic-linker "$ldso"/--no-dynamic-linker/' ld.musl-clang-lld >ld.musl-clang-lld-static
 chmod +x ld.musl-clang-lld*
 
 ln -sf musl-clang musl-gcc
