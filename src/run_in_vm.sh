@@ -11,4 +11,12 @@ else
     ARCH=$(arch)
 fi
 
-exec qemu-system-${ARCH} -nographic -kernel $1 -initrd $2
+exec qemu-system-${ARCH} \
+    -curses \
+    -no-reboot \
+    -enable-kvm \
+    -cpu host \
+    -m 512M \
+    -smp $(nproc) \
+    -kernel $1 \
+    -initrd $2
