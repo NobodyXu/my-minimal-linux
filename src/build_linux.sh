@@ -24,4 +24,4 @@ make -j $(nproc)
 make install
 make headers_install
 
-exec rsync --info=progress2,stats,symsafe -aHAX --delete usr/include/ ${BUILD}/usr/include
+exec cp -r usr/include/* ${BUILD}/usr/include/
