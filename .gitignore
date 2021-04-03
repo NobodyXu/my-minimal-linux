@@ -57,3 +57,5 @@ boot
 rootfs
 # This is where kernel-headers, libmusl.a will be installed to
 build_dir
+
+initramfs.img
