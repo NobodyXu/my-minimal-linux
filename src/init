@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Run itself again so that it will be interactive
+exec /bin/bash
+# The login shell must not exit, otherwise it will trigger kernel panic
+# Instead, it has to call shutdown
