@@ -2,6 +2,26 @@
 
 A runnable linux that have only vmlinuz and initramfs (rootfs is embedded in initramfs)
 
+The minimal kernel config `src/linux-kernel-configs/minimal-intel-kvm` I use still retain full virtio capacity.
+
+It supports almost all virtio devices:
+
+```
+CONFIG_BLK_MQ_VIRTIO
+CONFIG_NET_9P_VIRTIO
+CONFIG_VIRTIO_BLK
+CONFIG_SCSI_VIRTIO
+CONFIG_VIRTIO_NET
+CONFIG_VIRTIO_CONSOLE
+CONFIG_HW_RANDOM_VIRTIO
+CONFIG_VIRTIO_MENU
+CONFIG_VIRTIO_PCI
+CONFIG_VIRTIO_BALLOON
+CONFIG_VIRTIO_INPUT
+CONFIG_VIRTIO_MMIO
+CONFIG_VIRTIO_MMIO_CMDLINE_DEVICES
+```
+
 ## How to clone this repository
 
 ```
