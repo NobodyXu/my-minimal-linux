@@ -32,5 +32,5 @@ After finishing the build, try run your kernel using qemu-kvm:
 
 cd boot
 
-./run_in_vm.sh vmlinuz-5.11.9 initramfs.img
+../run_in_vm.sh vmlinuz-5.11.9 initramfs.img
 ```
