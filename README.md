@@ -63,3 +63,7 @@ cd boot
 
 ../run_in_vm.sh vmlinuz-5.11.9 initramfs.img
 ```
+## Cavert when running with the busybox initramfs
+
+To poweroff, you have to either invoke `/sbin/poweroff -f` or enable 
+`CONFIG_POWEROFF_ON_INIT_EXIT` in kernel config and poweroff by simply exiting the shell.
