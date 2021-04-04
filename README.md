@@ -24,6 +24,8 @@ CONFIG_VIRTIO_MMIO_CMDLINE_DEVICES
 
 Using gcc 10.2.0, I was able to build a xz-compressed kernel that is only 2MB large using this configuration.
 
+There is also `src/linux-kernel-configs/minimal-intel-kvm-no-virtio`, of which .
+
 ## How to clone this repository
 
 ```
