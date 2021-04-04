@@ -30,6 +30,13 @@ Using gcc 10.2.0, I was able to build a xz-compressed kernel that is only 2MB la
 git clone --recurse-submodules https://github.com/NobodyXu/my-minimal-linux
 ```
 
+## Requirement
+ - build-essential
+ - gcc >= 9.1
+ - clang >= 10
+ - cpio for building initramfs
+ - rsync for coping data
+
 ## How to build this repository
 
 ```
