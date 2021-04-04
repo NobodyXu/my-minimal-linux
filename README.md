@@ -2,7 +2,7 @@
 
 A runnable linux that have only vmlinuz and initramfs (rootfs is embedded in initramfs)
 
-The minimal kernel config `src/linux-kernel-configs/minimal-intel-kvm` I use still retain full virtio capacity.
+The minimal kernel config `src/linux-kernel-configs/minimal-intel-kvm-with-most-virtio` I use still retain full virtio capacity.
 
 It supports almost all virtio devices:
 
@@ -42,7 +42,7 @@ git clone --recurse-submodules https://github.com/NobodyXu/my-minimal-linux
 ```
 cd src/
 
-# You can use linux-kernel-configs/minimal-intel-kvm here
+# You can use linux-kernel-configs/minimal-intel-kvm-with-most-virtio here
 ./build_linux.sh <any kernel config you like>
 ./build_musl.sh
 # You can use busybox-configs/config here
